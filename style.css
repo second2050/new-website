@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ * second2050's base css
+ */
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/assets/comfortaa_variable.ttf");
+    font-display: block;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: "Comfortaa";
+    overflow: hidden;
+    background: var(--sekii-color-bg);
+    background-image: url("/assets/corner.svg");
+    background-size: 12em;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--sekii-color-fg);
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * color scheme
+ */
+:root {
+    --sekii-color-black: #282828;
+    --sekii-color-red: #f92672;
+    --sekii-color-green: #a6e22e;
+    --sekii-color-yellow: #f4a331;
+    --sekii-color-blue: #2fd0ef;
+    --sekii-color-purple: #7c34ff;
+    --sekii-color-cyan: #30efd4;
+    --sekii-color-white: #f8f8f2;
+
+    --sekii-color-fg: var(--sekii-color-white);
+    --sekii-color-bg: #191919;
+}
+
+.sidebar {
+    height: 100%;
+    width: 4.5em;
+    background-color: var(--sekii-color-blue);
+    color: var(--sekii-color-black);
+    flex: 1 1 none;
+    padding: 1em;
+}
+.sidebar-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 3.5em;
+    font-weight: 900;
+    align-items: baseline;
+    margin-right: 0.15em;
+}
+.sidebar-picture {
+    width: 4em;
+}
+@media (max-aspect-ratio: 1/1) {
+    .sidebar {
+        width: 1.8em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .sidebar-title {
+        font-size: 1.5em;
+    }
+    .sidebar-picture {
+        width: 1.8em;
+    }
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: scroll;
+}
+.main-content {
+    font-size: 1.35em;
+    max-width: 80ch;
+    line-height: 1.5em;
+    padding: 1em;
+}
+h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: var(--sekii-color-blue);
+}
+h2 {
+    font-size: 1.35em;
+    margin-top: 0.5em;
+    color: var(--sekii-color-green);
+}
+a {
+    color: var(--sekii-color-red);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: var(--sekii-color-black);
+    background-color: var(--sekii-color-red);
+}
+.hidden-link {
+    text-decoration: none;
+}
+
+.social-button {
+
+}
